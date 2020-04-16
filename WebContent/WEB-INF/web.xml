@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>javaWeb2019</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!--2019-4-18 -->
+  <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LoginOutServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginOutServlet</servlet-name>
+  <url-pattern>/loginout</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>LoginOutadminServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.LoginOutadminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>LoginOutadminServlet</servlet-name>
+  <url-pattern>/admin/loginoutadmin</url-pattern>
+  </servlet-mapping>
+  
+    <!--下面为客人 -->
+  <servlet>
+  <servlet-name>AllCustomerServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AllCustomerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AllCustomerServlet</servlet-name>
+  <url-pattern>/admin/findAllCus</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateCusServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.UpdateCusServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateCusServlet</servlet-name>
+  <url-pattern>/admin/updateCus</url-pattern>
+  </servlet-mapping>
+  
+    <!--2019-5-26 -->
+  <servlet>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>AdminRegisterServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AdminRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminRegisterServlet</servlet-name>
+  <url-pattern>/admin/adminregister</url-pattern>
+  </servlet-mapping>
+  <!-- 这个为客人的购买记录   -->
+   <servlet>
+  <servlet-name>UpdateCusEnrolmentServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.UpdateCusEnrolmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateCusEnrolmentServlet</servlet-name>
+  <url-pattern>/UpdateCusEnrolment</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>findPasswordServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.findPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>findPasswordServlet</servlet-name>
+  <url-pattern>/findpassword</url-pattern>
+  </servlet-mapping>
+    <!--    -->
+      <!--下面为房间 -->
+      
+        <servlet>
+  <servlet-name>AllRoomServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AllRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AllRoomServlet</servlet-name>
+  <url-pattern>/admin/findAllRoom</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateRoomServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.UpdateRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateRoomServlet</servlet-name>
+  <url-pattern>/admin/updateRoom</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>AdminRegisterRoomServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AdminRegisterRoomServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminRegisterRoomServlet</servlet-name>
+  <url-pattern>/admin/adminregisterroom</url-pattern>
+   </servlet-mapping>
+<!-- 219 -->
+     <!--下面为登记 -->
+      
+        <servlet>
+  <servlet-name>AllEnrolmentServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AllEnrolmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AllEnrolmentServlet</servlet-name>
+  <url-pattern>/admin/findAllEnrolment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>UpdateEnrolmentServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.UpdateEnrolmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>UpdateEnrolmentServlet</servlet-name>
+  <url-pattern>/admin/updateEnrolment</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>AdminRegisterEnrolmentServlet</servlet-name>
+  <servlet-class>cn.edu.lingnan.servlet.AdminRegisterEnrolmentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AdminRegisterEnrolmentServlet</servlet-name>
+  <url-pattern>/admin/adminregisterenrolment</url-pattern>
+   </servlet-mapping>
+<!-- 2019 添加给用户过滤器，没有权限无法跳转到管理员操作界面 -->
+  <filter>
+  <filter-name>AuthorityFilter</filter-name>
+  <filter-class>cn.edu.lingnan.filter.AuthorityFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  <filter-name>AuthorityFilter</filter-name>
+  <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- 2019 6-16 -->
+  <jsp-config>
+  <taglib>
+ <taglib-uri>/testtag</taglib-uri>
+  <taglib-location>/WEB-INF/tlds/testtag.tld</taglib-location>
+  </taglib>
+  
+  <taglib>
+ <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+  <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+  </taglib>
+  
+  <taglib>
+ <taglib-uri>http://java.sun.com/jsp/jstl/sql</taglib-uri>
+  <taglib-location>/WEB-INF/tlds/sql.tld</taglib-location>
+  </taglib>
+  </jsp-config>
+</web-app>
